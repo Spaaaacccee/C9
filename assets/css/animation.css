@@ -1,0 +1,11 @@
+.transitionUpNSC {
+    animation: transitionUpNSC 
+}
+
+@keyframes transitionUpNSC {
+    0%   {
+        transform: rotateX(54.772256deg) rotateZ(45deg) translateY(100%);
+    }/*Then at exactly the same time as JS, switch back to stage*/
+    50%  {transition: all 0s linear}
+    100% {transition: all 0s linear; transform: rotateX(54.772256deg) rotateZ(45deg);}
+}

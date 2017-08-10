@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+#nscContainer {
+        transform: translateX(calc(50% - 50vmin));
+}
+
+#nsc {
+	opacity:1;
+    pointer-events: none;
+}
+
+#nsc * {
+	transform-style:preserve-3d;
+    
+}
+
+#nsc {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100vmin;
+	height:100vmin;
+    transform: rotateX(54.772256deg) rotateZ(45deg);
+    transform-style: preserve-3d;
+}
+
+#stage {
+	position:absolute;
+	height:100vmin;
+	width:100vmin;
+	left:50%;
+	top:0;
+	transform:translateX(-50%);
+    background-color: #f3f3f3;
+}
+
+#stage:after {
+    content: "";
+    display: block;
+    height:100vmin;
+    width:100vmin;
+    position:relative;
+    background:green;
+    transform: rotateX(90deg) translateZ(150vmin) translateY(50vmin);
+    background:rgba(150,150,150,0.05)
+}
+
+#stage:before {
+    content: "";
+    display: block;
+    height:100vmin;
+    width:100vmin;
+    position:relative;
+    background:green;
+    transform:rotateX(90deg) rotateY(90deg) translateZ(-50vmin) translateY(50vmin);
+    background:rgba(150,150,150,0.05)
+}
+
+#stage .cube * {
+    opacity:1;
+    transition: all 0.7s ease-in-out;
+}
+
+.thumb {
+	position:absolute;
+	height:100vmin;
+	width:100vmin;
+	left:50%;
+	top:0;
+}
+
+.filter {
+    position:relative;
+    transition: all 0.7s ease-in-out;
+}
+
+.filter > *{
+   
+    transition: all 0.7s ease-in-out;
+}
+
+.filtermain {
+
+}
+
+#filterthumbDown {
+
+}
+
+#filterthumbRight {
+
+}
+
+#thumbLeft {
+    transform:translateX(-50%) translateX(-100%);
+}
+
+#thumbRight {
+    transform:translateX(-50%)  translateX(100%);
+}
+
+#thumbTop {
+    transform:translateX(-50%)  translateY(-100%);
+}
+
+#thumbDown {
+    transform:translateX(-50%) translateY(100%);
+}
+
+.cube > div {
+	height:10vmin;
+	width:10vmin;
+	position:absolute;
+    box-sizing: border-box;
+}
+
+.cube > .top {
+    background-color: #f7f7f7;;
+    background-size: cover;
+    transform: translateZ(5vmin) translateX(5vmin) translateY(5vmin);
+	
+}
+
+.cube > .left { 
+    background-color: hsl(0, 0%, 86%);
+    background-size: cover;
+    transform: rotateX(90deg) translateZ(-10vmin) translateX(5vmin);
+}
+
+.cube > .right {
+    background-color: #9A9A9A;
+    background-size: cover;
+    transform: rotateY(90deg) translateZ(10vmin) translateY(5vmin) rotateY(180deg) rotateZ(-90deg);
+}
+
+.cube {
+	position: absolute;
+    top: 5vmin;
+    left: 5vmin; /*actual value + 5vmin*/
+    transform: translateZ(5vmin) rotateY(-0deg) translateX(-10vmin) translateY(-10vmin);
+    transition: all 0.7s ease-in-out;
+	}
+
+.cube *{
+    transition: all 0.7s ease-in-out;
+}
+
+.BATop::after {
+    
+}
+.BALeft {}
+.BARight {}
+.BABottom {
+    background: linear-gradient(to bottom , rgba(255,255,255,0) 0%,rgba(75,75,75,0.15) 100%);
+    height: 10vmin;
+    width: 10vmin;
+    transform: rotate(180deg) translateZ(-0.8px) translateX(0.8px);
+}
+
+.BABottom:after {
+    content:"";
+    background: linear-gradient(to bottom , rgba(255,255,255,0) 0%,rgba(75,75,75,0.15) 100%);
+    height: 10vmin;
+    width: 10vmin;
+    transform: rotate(180deg) rotateX(-90deg) translateZ(-5vmin) rotateZ(180deg) translateY(-5vmin);
+    display:block;
+}
+
+.characterFace1 {
+    height: 20vmin;
+    width: 10vmin;
+    background: red;
+    transform: rotateX(90deg) translateY(10vmin) translateZ(5vmin);
+    border-radius:5vmin;
+}
+
+.characterFace2 {
+    height: 20vmin;
+    width: 10vmin;
+    background: blue;
+    transform: rotateX(90deg) translateY(10vmin) translateZ(5vmin) rotateY(90deg);
+    border-radius:5vmin;
+}
+
+.characterFace3 {
+    height: 10vmin;
+    width: 10vmin;
+    background: green;
+    transform: rotateX(90deg) translateY(15vmin) translateZ(2.5vmin) rotateY(90deg) rotateY(90deg);
+    border-radius:5vmin;
+}
+
+.characterFace4 {
+    transform: rotateX(0deg) translateY(0vmin) translateZ(0.2vmin) rotateY(0deg) rotateY(0deg);
+    border-radius: 5vmin;
+    background: radial-gradient(ellipse at center, rgba(48,48,48,0.2) 20%,rgba(48,48,48,0.1) 50%,rgba(181,181,181,0) 68%);
+    height:10vmin;
+    width:10vmin;
+}
+
+.characterFilter {
+    position: absolute;
+    transition: all 0.2s linear;
+}
+
+.character {
+    transform: translateX(-5vmin) translateY(-5vmin);
+    height:10vmin;
+    width:10vmin;
+    
+}
+
+.character * {
+    position:absolute;
+}
+
+.characterRotation {
+    transform-origin: 0% 0%;
+}
+
+.thumb .cube * {
+    opacity:0.65;
+    transition: all 0.7s ease-in-out;
+}
+
+* {
+transition: opacity 0.7s ease;    
+}

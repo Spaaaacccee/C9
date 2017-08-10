@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Anders';
+  src: url('Anders.woff2') format('woff2'),
+       url('Anders.woff') format('woff'),
+       url('Anders.ttf') format('truetype');
+}

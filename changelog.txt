@@ -1,0 +1,20 @@
+CHANGELOG
+
+Alpha 1.07
+- Added level switching, printlogs
+- Added option to stop console logs
+- Added basic platformer view
+- Added debug functionality
+
+Alpha 1.08
+- Added ability to manipulate 3D space 
+
+Alpha 1.09
+- Changed visual style
+- Fixed bugs
+- Some code optimised
+- Changed menu screen
+- Added support for color change
+
+Alpha 1.10
+- Added Submenus

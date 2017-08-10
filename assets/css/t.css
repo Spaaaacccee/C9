@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+* {
+	font-family:'Poiret One', sans serif;
+	font-weight:bold;
+	transition: all 0.2s ease;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor:default;
+}
+
+h1 {
+	margin-bottom:15px;
+	font-size:80px;
+	font-weight:300;
+	width:auto;
+    font-family: 'Anders','Poiret One', sans serif;
+    background: linear-gradient(to right, rgb(0, 58, 255) 0%, rgb(0, 255, 111) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.button {
+    width: 59%;
+	color: black;
+    border: none;
+    box-sizing: border-box;
+    height: 30px;
+    margin-bottom: 10px;
+	display:block;
+    font-size:20px;
+    background: transparent;
+    text-align: left;
+}
+
+.button:hover {
+    background:rgba(0,0,0,0.08);
+}
+
+.button:active {
+    
+    background:rgba(0,0,0,0.12)
+}
+.button:focus {
+    outline:none;
+}
+
+.button.heading {
+    font-weight: bold;
+    pointer-events: none;
+    -webkit-text-stroke:1px black;
+        letter-spacing: 1.3px;
+}
+
+.submenu {
+    font-size:15px;
+    padding-left:50px;
+}
+
+#mC {
+	margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50% );
+    width:70%;
+}
+
+#mB {
+	    display: inline-block;
+    width: 100%;
+}
+
+body {
+    background: linear-gradient(to bottom, rgba(212,212,212,0.6) 0%, rgba(237,237,237,0) 100%);
+	margin:0;
+	overflow:hidden;
+    height:100vh;
+    width:100vw;
+}
